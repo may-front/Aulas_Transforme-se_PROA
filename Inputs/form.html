@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário 2</title>
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <!-- formulario -->
+    <!-- podem tem vários forms no codigo -->
+    <form action="" method="">
+      <fieldset>
+        <legend>Dados Pessoais</legend>
+        <label for="nome">Seu nome:</label>
+        <input type="text" name="nome" id="nome" placeholder="Seu nome" />
+        <br />
+        <label for="idade">Sua idade:</label>
+        <input type="number" name="idade" id="idade" min="0" max="100" /> <br />
+        <label for="email">Seu email:</label>
+        <input type="email" name="email" id="email" /> <br />
+        <label for="numero">Seu número:</label>
+        <input type="number" name="numero" id="numero" step="1,5" /> <br />
+        <label for="senha">Sua senha:</label>
+        <input
+          type="password"
+          name="senha"
+          id="senha"
+          minlength="8"
+          maxlenght="10"
+        />
+        <label for="check">Aceita os termos?</label>
+        <input type="checkbox" name="check" id="check" checked />
+
+        <label for="contaP">Conta Pessoal</label>
+        <input type="radio" name="radio" id="contaP" />
+
+        <label for="ContaJ">Conta Jurídica</label>
+        <input type="radio" name="radio" id="contaJ" />
+        <p>
+          <input type="submit" value="Enviar" />
+          <input type="reset" value="Limpar" />
+        </p>
+      </fieldset>
+    </form>
+  </body>
+</html>
