@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tabela Completa</title>
+
+    <style>
+        caption {
+            color: #FFF;
+            font-size: 30px;
+        }
+        body {
+            background-color:#111010
+        
+        }
+
+        table {
+            width: 700px;
+            font-family:Verdana;
+            text-align: center;
+        }
+
+        td {
+            padding: 20px;
+        }
+      table,
+      td {
+        border: 1px solid #000;
+        border-collapse: collapse;
+      }
+
+      thead {
+        background-color: rgb(62, 101, 255);
+        padding: 5px;
+        font-size:35px;
+      }
+
+      tbody {
+        background-color: rgb(212, 150, 253);
+        font-size: 30px;
+      }
+
+      tfoot {
+        background-color:  rgb(51, 243, 99);
+        font-size: 35px;
+      }
+
+      .titulo {
+        background-color: green;
+      }
+    </style>
+  </head>
+
+  <body>
+    <table>
+      <!-- título da tabela -->
+      <caption>
+        SERVIÇOS
+      </caption>
+
+      <!-- cabeçalho da tabela -->
+      <thead>
+        <tr>
+          <th>Mês</th>
+          <th>Serviço</th>
+          <th>Valor</th>
+        </tr>
+      </thead>
+
+      <!-- corpo da tabela -->
+      <tbody>
+        <tr>
+          <!-- o dado vai ocupar duas linhas da tabela -->
+          <td rowspan="2">Maio</td>
+          <td>Consultoria</td>
+          <td>R$2.000,00</td>
+        </tr>
+
+        <tr>
+          <!-- aqui é a segunda linha -->
+          <td>Desenvolvimento</td>
+          <td>R$8.000,00</td>
+        </tr>
+
+        <tr>
+          <td class="titulo">Fevereiro</td>
+          <td class="titulo">Projeto</td>
+          <td class="titulo">R$1.500,00</td>
+        </tr>
+
+        <tr>
+          <td>Junho</td>
+          <td>Back-End</td>
+          <td>R$8.800,00</td>
+        </tr>
+      </tbody>
+
+      <!-- rodapé da tabela -->
+      <tfoot>
+        <tr>
+          <tr>
+            <!-- ocupar o espaço de duas linhas -->
+            <th colspan="2">Total Geral</th>
+            <td>R$20.300,00</td>
+
+          </tr>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>
