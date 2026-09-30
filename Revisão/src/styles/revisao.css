@@ -1,0 +1,9 @@
+body {
+  background-color: rgb(176, 145, 225);
+}
+
+ul {
+  color: rgb(61, 7, 100);
+  list-style-type: square;
+  /* list-style-position: inside; */
+}
