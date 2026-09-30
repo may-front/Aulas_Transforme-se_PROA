@@ -1,0 +1,16 @@
+/* estilizar elemento único */
+#caixa1 {
+  width: 200px; /*tamanho*/
+  height: 200px; /*altura*/
+  background-color: rgb(97, 0, 193);
+  margin: 10px 20px 30px 40px; /*top left right e bottom*/
+
+  /* margem é um espaçamento pra fora */
+}
+
+/* #caixa2 {
+  width: 100px;
+  height: 100px;
+  background-color: yellow;
+  margin: 20px;
+} */
