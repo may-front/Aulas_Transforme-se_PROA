@@ -1,0 +1,19 @@
+body {
+  background-color: rgb(173, 238, 178);
+}
+.pageFrame {
+  width: 600px;
+  height: 400px;
+}
+
+.titulo {
+  font-size: 35px;
+  text-align: center;
+}
+
+.textos {
+  font-family: Arial;
+  font-size: 18px;
+  text-align: center;
+  align-items: center;
+}

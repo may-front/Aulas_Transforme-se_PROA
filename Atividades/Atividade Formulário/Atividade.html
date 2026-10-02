@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Atividade</title>
+    <link rel="stylesheet" href="styles/style.css">
+  </head>
+  <body>
+    <form class="textos">
+        
+
+        <fieldset class="pageFrame">
+
+            <legend class="titulo">Ficha de Consulta</legend>
+
+            <label for="nome">Nome do Paciente:</label>
+      <input type="text" name="nome" id="nome"> </br>
+
+      <label for="data">Data da Consulta:</label> 
+      <input type="date" name="data" id="data"> </br>
+
+      <label for="">Especialidade Médica:</label>
+        <select name="especialidade" id="especialidade"> <!--lista suspensa-->
+            <option value="geral">Clínica Geral</option>
+            <option value="cardio">Cardiologia</option>
+            <option value="derma">Dermatologia</option>
+            <option value="pedia">Pediatria</option>
+        </select> </br>
+
+        
+        <label for="planoSaude">Plano de Saúde</label>
+        <select name="plano" id="plano">
+            <option value="particular">Particular</option>
+            <option value="unimed">Unimed</option>
+            <option value="amil">Amil</option>
+            <option value="bradesco">Bradesco Saúde</option>
+        </select>
+        </br>
+        <label for="primeira">Primeira consulta na clínica? </label>
+        Sim
+        <input type="radio" name="radio" id="primeiraSim">
+        Não
+        <input type="radio" name="radio" id="primeiraNão">
+        </br>
+        <label for="check">Necessidade de Acessibilidade no local?</label> </br>
+        Rampa de acesso
+        <input type="checkbox" name="check" id="checkAcesso">
+        Intérprete de Libras
+        <input type="checkbox" name="check" id="checkLibras">
+        Cão Guia
+        <input type="checkbox" name="check" id="checkLibras">
+        </br>
+        <label for="arquivoGuia">Guia Médica ou Encaminhamento:</label> </br>
+        <input type="file" name="arquivoGuia" id="arquivoGuia">
+
+        <p> Confirmar Agendamento </br>
+            <input type="submit" value="Enviar">
+        </p>
+        </fieldset>
+      
+    </form>
+
+    
+  </body>
+</html>
