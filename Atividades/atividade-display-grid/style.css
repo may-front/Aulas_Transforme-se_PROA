@@ -1,0 +1,67 @@
+.container {
+  width: 90%;
+  margin: 2% auto;
+  position: relative;
+  border: 2px solid #000;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "cabecalho cabecalho"
+    "navegacao navegacao"
+    "principal principal"
+    "rodape rodape";
+}
+
+header {
+  grid-area: cabecalho;
+  background-color: blueviolet;
+  position: relative;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  text-align: center;
+}
+
+nav {
+  grid-area: navegacao;
+  position: relative;
+  width: 100%;
+  height: 40px;
+  background-color: orange;
+}
+
+main {
+  grid-area: principal;
+  position: relative;
+  width: 100%;
+  height: 400px;
+  display: flex;
+}
+
+#esquerdo {
+  grid-area: principal;
+  position: relative;
+  width: 30%;
+  height: 400px;
+  background-color: crimson;
+  color: #fff;
+}
+
+#direito {
+  grid-area: principal;
+  position: relative;
+  width: 70%;
+  height: 400px;
+  background-color: rgb(54, 53, 53);
+  color: #fff;
+}
+
+footer {
+  grid-area: rodape;
+  position: relative;
+  width: 100%;
+  height: 80px;
+  background-color: rgb(52, 9, 108);
+  color: #fff;
+}
