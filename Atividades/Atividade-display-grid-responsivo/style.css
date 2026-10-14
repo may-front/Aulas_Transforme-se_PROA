@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  position: relative;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "cabecalho"
+    "navegacao"
+    "principal" "principal" "principal"
+    "footer";
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+header {
+  position: relative;
+  grid-area: cabecalho;
+  width: 100%;
+  height: 80px;
+  background-color: rgb(34, 28, 28);
+  color: #fff;
+}
+
+nav {
+  position: relative;
+  grid-area: navegacao;
+  width: 100%;
+  height: 60px;
+  background-color: rgb(66, 66, 87);
+  font-size: 20px;
+  color: #fff;
+}
+
+main {
+  position: relative;
+  width: 100%;
+}
+
+.container2 {
+  grid-area: principal;
+  display: flex;
+  flex-direction: row;
+}
+
+#lateral,
+aside {
+  position: relative;
+  width: 20%;
+  height: 400px;
+  background-color: rgb(158, 117, 158);
+}
+
+section {
+  position: relative;
+  width: 60%;
+  height: 400px;
+  background-color: rgb(255, 186, 58);
+}
+
+footer {
+  position: relative;
+  grid-area: footer;
+  width: 100%;
+  height: 50px;
+  background-color: rgb(34, 28, 28);
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .container2 {
+    flex-direction: column;
+  }
+
+  main,
+  #lateral,
+  aside,
+  section {
+    width: 100%;
+  }
+}
