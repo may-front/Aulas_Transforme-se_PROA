@@ -1,0 +1,19 @@
+.elemento {
+  width: 200px;
+  height: 200px;
+  display: inline-block;
+}
+
+#div1 {
+  background-color: red;
+}
+
+#div2 {
+  background-color: blue;
+}
+
+#div3 {
+  background-color: green;
+  display: none;
+  /* continua no código, mas retirado da página; */
+}
