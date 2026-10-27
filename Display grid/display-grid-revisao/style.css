@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+/* OBRIGATORIO usar reset css */
+
+.container {
+  position: relative;
+  display: grid;
+  grid-template-columns: auto;
+  /* quantidade de colunas */
+  /* com auto vai definir o tamanho automaticamente */
+  grid-template-rows: auto;
+  grid-template-areas:
+    "header"
+    "principal"
+    "footer";
+  /* define as areas que vão ocupar o layout */
+}
+
+header {
+  position: relative;
+  grid-area: header;
+  /* relacionando a area que vai ser ocupada */
+  width: 100%;
+  height: 80px;
+  background-color: rgb(69, 66, 66);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  border: 3px solid black;
+}
+
+.container2 {
+  position: relative;
+  grid-area: principal;
+  display: flex;
+}
+
+#esquerda {
+  position: relative;
+  width: 30%;
+  height: 400px;
+  background-color: rgb(163, 94, 223);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+nav,
+aside {
+  position: relative;
+  width: 80%;
+  height: 180px;
+  color: #fff;
+  background-color: rgb(46, 37, 80);
+  border: 3px solid black;
+}
+
+main {
+  position: relative;
+  width: 70%;
+}
+
+#direita {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  background-color: orange;
+  color: #231f1f;
+  text-align: center;
+  text-align: center;
+}
+footer {
+  position: relative;
+  grid-area: footer;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 80px;
+  background-color: rgb(71, 69, 69);
+  color: #fff;
+  text-align: center;
+  border: 3px solid black;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 768px) {
+  .container2 {
+    flex-direction: column;
+  }
+
+  #esquerda,
+  main {
+    width: 100%;
+  }
+}
